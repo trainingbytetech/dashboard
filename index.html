@@ -14,15 +14,15 @@
       frameborder="0"
       style="border:0"
       allowfullscreen
-      sandbox="allow-scripts allow-same-origin allow-popups"
-    ></iframe>
-<script>
+      sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+      </iframe>
+    
+    <script>
   setInterval(function() {
     const iframe = document.querySelector("iframe");
     iframe.src = iframe.src; // Reload iframe every 5 minutes (300,000 milliseconds)
   }, 300000); 
 </script>
-
     
   </body>
 </html>
